@@ -1,0 +1,11 @@
+<h1>글</h1>
+<a href="/posts/new">글 쓰기</a><br>
+_____________________________________
+<% @posts.each do |p| %>
+    <!--<h3><%=p.title%></h3>-->
+    <!--<p><%=p.content%></p>-->
+    <a href="/posts/show/<%p.id %>"><img src='<%=p.img_url%>'></a>
+    <!--<%=image_tag p.img_url %>-->
+    <!--<a href="/posts/edit/<%=p.id%>">[수정]</a> <a href="/posts/destroy/<%=p.id%>">[삭제]</a><br>-->
+_____________________________________<br>
+<% end %>
